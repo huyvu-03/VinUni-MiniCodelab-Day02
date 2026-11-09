@@ -25,6 +25,7 @@ Chọn top 3 từ danh sách SCAN: **#1 (Vinpearl Check-in/Check-out), #2 (Vinpe
 
 ## Thẻ bài toán tiêu biểu: Card #1 — Vinpearl Tự động hóa Check-in/Check-out
 
+```text
 ┌─────────────────────────────────────────────────────────────┐
 │ QUICK PROBLEM CARD #1                                       │
 │                                                             │
