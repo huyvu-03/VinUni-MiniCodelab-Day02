@@ -76,18 +76,22 @@ Chọn **top 3 bài toán** từ danh sách trên và hoàn thiện **3 Quick Pr
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
-│ QUICK PROBLEM CARD #01                                     │
+│ QUICK PROBLEM CARD #01                                      │
 │                                                             │
-│ Bài toán (1 câu): Tự động hóa quy trình tiếp nhận, phân loại, chuyển bộ phận và theo dõi xử lý yêu cầu của cư dân Vinhomes nhằm giảm thời gian xử lý, hạn chế bỏ sót yêu cầu và nâng cao chất lượng dịch vụ.  │
+│ Bài toán (1 câu): Tự động hóa quy trình tiếp nhận, phân loại,
+│ chuyển bộ phận và theo dõi xử lý yêu cầu của cư dân Vinhomes│
+│nhằm giảm thời gian xử lý, hạn chế bỏ sót yêu cầu và nâng cao│
+│chất lượng dịch vụ.                                          │
 │ Công ty thành viên: [ ] VinFast  [ ] Xanh SM  [x] Vinhomes  │
 │                     [ ] Vinmec   [ ] Khác (Ghi rõ)________  │
 │                                                             │
-│ Ai đang đau (Actor)? ______________________________________
-Nhân viên lễ tân / Customer Service tại Ban quản lý.
-Nhân viên trực hotline và tiếp nhận phản ánh.
-Trưởng bộ phận kỹ thuật, vệ sinh, an ninh và chăm sóc khách hàng.
-Ban quản lý dự án (BQL).
-Cư dân là người chịu ảnh hưởng cuối cùng khi yêu cầu bị chậm hoặc xử lý sai. │
+│ Ai đang đau (Actor)? ______________________________________ │
+│- Nhân viên lễ tân / Customer Service tại Ban quản lý.       │
+│- Nhân viên trực hotline và tiếp nhận phản ánh.              │
+│- Trưởng bộ phận kỹ thuật, vệ sinh, an ninh và CS.           │
+│- Ban quản lý dự án (BQL).                                   │
+│- Cư dân là người chịu ảnh hưởng cuối cùng khi yêu cầu bị    │
+│chậm hoặc xử lý sai.                                         │
 │                                                             │
 │ Workflow thủ công hiện tại (3-5 bước):                      │
 │   1. Cư dân gửi yêu cầu qua hotline, ứng dụng, email, Zalo hoặc trực tiếp tại quầy.
