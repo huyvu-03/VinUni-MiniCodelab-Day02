@@ -24,34 +24,117 @@ Dùng **4 Lenses** quét qua vận hành của các công ty thành viên Vingro
 
 Chọn top 3 từ danh sách SCAN: **#2 (Xanh SM Sự cố sạc), #4 (Vinhomes CSKH), #6 (Xanh SM Hủy chuyến).**
 
-## Thẻ bài toán tiêu biểu: Card #2 — Xanh SM Xử lý sự cố sạc pin thực địa
+
+# 🃏 Phase 2 — QUICK-ASSESS: 3 Quick Problem Cards (Cá nhân)
+
+Chọn top 3 từ danh sách SCAN: **#1 (Vinpearl Check-in/Check-out), #2 (Vinpearl Dự báo nhân sự), #5 (VinWonders Cá nhân hóa lịch trình).**
+
+## Thẻ bài toán tiêu biểu: Card #1 — Vinpearl Tự động hóa Check-in/Check-out
+
+┌─────────────────────────────────────────────────────────────┐
+│ QUICK PROBLEM CARD #1                                       │
+│                                                             │
+│ Bài toán: Nhân viên lễ tân phải kiểm tra thông tin đặt      │
+│ phòng, giấy tờ tùy thân và thanh toán thủ công, khiến       │
+│ khách phải chờ lâu vào mùa cao điểm.                        │
+│ Công ty thành viên: [x] Khác (Vinpearl)                     │
+│                                                             │
+│ Ai đang đau? Khách lưu trú (chờ đợi), Nhân viên lễ tân      │
+│ (quá tải), Quản lý khách sạn (hiệu suất vận hành).          │
+│                                                             │
+│ Workflow thủ công hiện tại (5 bước):                        │
+│   1. Khách cung cấp mã đặt phòng và giấy tờ tùy thân        │
+│   → 2. Lễ tân kiểm tra và xác minh thông tin khách          │
+│   → 3. Đối chiếu thông tin thanh toán và dịch vụ đã đặt     │
+│   → 4. Nhập/cập nhật dữ liệu vào hệ thống quản lý khách sạn │
+│   → 5. Xác nhận nhận phòng và bàn giao chìa khóa            │
+│                                                             │
+│ Bước nào tốn nhất? Bước 2-4 (⏱ 3-5 phút/khách)              │
+│ AI có thể nhảy vào hỗ trợ ở bước nào? Bước 2-4              │
+│ (OCR giấy tờ -> Đối chiếu dữ liệu -> Tự động điền thông tin)│
+│                                                             │
+│ Đo thành công bằng gì (Metric có số)?                       │
+│ Giảm thời gian xử lý check-in từ 5 phút -> dưới 2 phút.    │
+│ Giảm ít nhất 50% thời gian nhập liệu thủ công.              │
+│                                                             │
+│ Quick Architecture: [x] Rule (OCR + Workflow Automation)    │
+└─────────────────────────────────────────────────────────────┘
+```
+
+## Thẻ bài toán: Card #2 — Vinpearl Dự báo nhu cầu và phân bổ nhân sự
 
 ```text
 ┌─────────────────────────────────────────────────────────────┐
 │ QUICK PROBLEM CARD #2                                       │
 │                                                             │
-│ Bài toán: Tài xế Xanh SM báo cáo sự cố sạc pin / hết pin    │
-│ giữa đường cần điều phối cứu hộ hoặc trạm sạc gần nhất.     │
-│ Công ty thành viên: [x] Xanh SM (GSM)                       │
+│ Bài toán: Quản lý khách sạn phải tổng hợp dữ liệu đặt phòng │
+│ và lượng khách thủ công để dự báo nhu cầu, phân bổ nhân sự, │
+│ dẫn đến thiếu hoặc thừa nhân lực vào giờ cao điểm.          │
+│ Công ty thành viên: [x] Khác (Vinpearl)                     │
 │                                                             │
-│ Ai đang đau? Tài xế (chờ đợi), Điều phối viên (quá tải)     │
+│ Ai đang đau? Quản lý vận hành (khó lập kế hoạch),           │
+│ Trưởng bộ phận (khó điều phối), Nhân viên (quá tải).        │
 │                                                             │
 │ Workflow thủ công hiện tại (5 bước):                        │
-│   1. Tài xế gọi tổng đài điều vận báo hết pin               │
-│   → 2. Điều phối viên tra cứu thủ công vị trí xe trên bản đồ│
-│   → 3. Tra cứu thủ công các trạm sạc VinFast còn trụ trống   │
-│   → 4. Viết tin nhắn chỉ dẫn/đường đi gửi qua App tài xế    │
-│   → 5. Liên hệ đội xe cứu hộ nếu xe đã cạn kiệt pin         │
+│   1. Thu thập dữ liệu đặt phòng và tỷ lệ lấp đầy            │
+│   → 2. Tổng hợp lịch sử lưu trú và sử dụng dịch vụ          │
+│   → 3. Ước tính lượng khách theo ngày và khung giờ          │
+│   → 4. Lập kế hoạch phân bổ nhân sự từng bộ phận            │
+│   → 5. Điều chỉnh lịch làm việc khi nhu cầu thay đổi        │
 │                                                             │
-│ Bước nào tốn nhất? Bước 3-4 (⏱ 12 phút/lượt)                │
-│ AI có thể nhảy vào hỗ trợ ở bước nào? Bước 3-4              │
-│ (Tự động hóa lấy vị trí -> Tra cứu trạm trống -> Draft tin) │
+│ Bước nào tốn nhất? Bước 2-4 (⏱ 60-120 phút/chu kỳ)          │
+│ AI có thể nhảy vào hỗ trợ ở bước nào? Bước 2-4              │
+│ (Tổng hợp dữ liệu -> Dự báo lượng khách -> Đề xuất nhân sự) │
 │                                                             │
-│ Đo thành công bằng gì (Metric có số)?                        │
-│ Giảm thời gian xử lý sự cố từ 15 phút ──> dưới 3 phút.      │
+│ Đo thành công bằng gì (Metric có số)?                       │
+│ Giảm thời gian lập kế hoạch từ 120 phút -> dưới 30 phút.   │
+│ Giảm ít nhất 20% sai lệch giữa nhân sự dự báo và thực tế.   │
 │                                                             │
-│ Quick Architecture: [x] LLM Feature (Tự động soạn chỉ dẫn)   │
+│ Quick Architecture: [x] Rule (ML Forecasting + Optimization)│
 └─────────────────────────────────────────────────────────────┘
+```
+
+## Thẻ bài toán: Card #3 — VinWonders Cá nhân hóa lịch trình vui chơi
+
+```text
+┌─────────────────────────────────────────────────────────────┐
+│ QUICK PROBLEM CARD #3                                       │
+│                                                             │
+│ Bài toán: Khách tham quan phải tự tìm kiếm và sắp xếp thông │
+│ tin trò chơi, thời gian biểu diễn, vị trí và thời gian chờ  │
+│ để xây dựng lịch trình phù hợp với nhu cầu cá nhân.         │
+│ Công ty thành viên: [x] Khác (VinWonders)                   │
+│                                                             │
+│ Ai đang đau? Khách tham quan (mất thời gian lập lịch),      │
+│ Gia đình có trẻ nhỏ (khó lựa chọn hoạt động),               │
+│ Nhân viên CSKH (phải tư vấn nhiều yêu cầu lặp lại).         │
+│                                                             │
+│ Workflow thủ công hiện tại (5 bước):                        │
+│   1. Tìm kiếm thông tin trò chơi và chương trình biểu diễn  │
+│   → 2. Lựa chọn hoạt động theo sở thích và độ tuổi          │
+│   → 3. Tra cứu vị trí các khu vực trên bản đồ               │
+│   → 4. Ước tính thời gian di chuyển và thời gian chờ        │
+│   → 5. Tự sắp xếp và điều chỉnh lịch trình                  │
+│                                                             │
+│ Bước nào tốn nhất? Bước 4-5 (⏱ 10-20 phút/lịch trình)       │
+│ AI có thể nhảy vào hỗ trợ ở bước nào? Bước 2-5              │
+│ (Phân tích sở thích -> Gợi ý hoạt động -> Tối ưu lịch trình)│
+│                                                             │
+│ Đo thành công bằng gì (Metric có số)?                       │
+│ Giảm thời gian lập lịch từ 20 phút -> dưới 2 phút.         │
+│ Tỷ lệ khách chấp nhận lịch trình đề xuất đạt ít nhất 70%.  │
+│                                                             │
+│ Quick Architecture: [x] Agent (LLM + Recommendation System) │
+└─────────────────────────────────────────────────────────────┘
+```
+
+## 📌 Ghi chú
+
+- Các số liệu về thời gian xử lý và KPI là ước tính ban đầu, cần khảo sát và xác minh với bộ phận vận hành.
+- Card #1: OCR hỗ trợ nhận diện giấy tờ, Rule-based kiểm tra dữ liệu và Workflow Automation hỗ trợ nhập liệu.
+- Card #2: Machine Learning dự báo nhu cầu kết hợp Optimization Algorithm để đề xuất phân bổ nhân sự.
+- Card #3: LLM Agent kết hợp Recommendation System và Route Optimization để xây dựng lịch trình cá nhân hóa.
+
 ```
 
 ---
