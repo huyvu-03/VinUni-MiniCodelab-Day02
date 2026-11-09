@@ -63,26 +63,11 @@ Hãy sử dụng **4 Lenses** dưới đây để quét qua hoạt động vận
 ### 📝 List bài toán của tôi:
 | # | Subsidiary (VinFast/Xanh SM...) | Lens | Mô tả ngắn bài toán |
 |---|----------------------------------|------|---------------------|
-| 1 | Tiếp nhận và xử lý yêu cầu cư dân (Resident Service Desk)
-- Quy trình thủ công: Nhận phản ánh qua hotline, app, email, Zalo; nhân viên đọc, phân loại, chuyển bộ phận, theo dõi và phản hồi.
-- Điểm nghẽn: Trùng yêu cầu, chuyển sai bộ phận, bỏ sót SLA, cập nhật trạng thái nhiều lần.
-- AI có thể làm: NLP phân loại yêu cầu, AI đọc ảnh/video, tự tạo ticket, phân công, theo dõi SLA và soạn phản hồi.
-| 2 | Bảo trì hệ thống kỹ thuật và quản lý năng lượng (Facility Management)
-Quy trình thủ công: Kiểm tra thang máy, HVAC, bơm nước, điện, PCCC; ghi nhận sự cố; lập kế hoạch bảo trì.
-Điểm nghẽn: Bảo trì thiên về phản ứng sau khi hỏng, dữ liệu thiết bị phân tán, khó dự báo.
-AI có thể làm: Predictive Maintenance, phát hiện bất thường, Computer Vision đọc đồng hồ, phân tích tiêu thụ điện nước và tối ưu lịch vận hành.
-| 3 | Đối soát điện, nước, phí dịch vụ và công nợ
-Quy trình thủ công: Thu thập chỉ số công tơ, tổng hợp Excel, kiểm tra biểu giá, lập hóa đơn, đối chiếu thanh toán.
-Điểm nghẽn: Nhập liệu nhiều lần, sai số công tơ, nhầm kỳ, khó phát hiện tiêu thụ bất thường.
-AI có thể làm: OCR ảnh công tơ, đối chiếu dữ liệu, phát hiện bất thường, tự động lập thông báo thanh toán và nhắc nợ.
-| 4 | Giám sát an ninh và xử lý sự cố CCTV
-Quy trình thủ công: Nhân viên theo dõi màn hình, tìm lại video khi có sự cố, lập biên bản và báo cáo.
-Điểm nghẽn: Khối lượng video lớn, tìm kiếm thủ công, khó phát hiện sự kiện bất thường.
-AI có thể làm: Computer Vision nhận diện hành vi bất thường, xâm nhập khu vực cấm, khói/lửa, va chạm; tìm kiếm video bằng ngôn ngữ tự nhiên.
-| 5 | Kiểm tra chất lượng, nghiệm thu và bàn giao căn hộ
-Quy trình thủ công: Kiểm tra từng căn, chụp ảnh lỗi, ghi checklist, phân công nhà thầu sửa chữa, tái kiểm tra.
-Điểm nghẽn: Ghi nhận lỗi không đồng nhất, lỗi bị bỏ sót, chậm đóng lỗi, tái sửa chữa.
-AI có thể làm: Computer Vision phát hiện lỗi hoàn thiện, OCR đọc checklist, đối chiếu tiêu chuẩn, theo dõi tiến độ khắc phục và phân tích nguyên nhân lỗi.
+|1.|Vinhomes|Lặp lại |Nhân viên phải lặp đi lặp lại việc đọc, phân loại và chuyển tiếp hàng trăm yêu cầu cư dân từ hotline, email, app và Zalo mỗi ngày.|
+|2.|Vinhomes|Tốn thời gian|Đội vận hành mất nhiều thời gian kiểm tra thiết bị kỹ thuật (thang máy, HVAC, điện nước), tổng hợp dữ liệu và lập kế hoạch bảo trì thủ công.|
+|3.|Vinhomes|AI có thể làm tốt hơn|Quy trình đối soát điện, nước và phí dịch vụ hiện phụ thuộc Excel và nhập liệu thủ công; AI có thể tự đọc công tơ, phát hiện bất thường và nhắc thanh toán chính xác hơn.|
+|4.|Vinhomes|AI có thể làm tốt hơn|Việc giám sát hàng trăm camera CCTV bằng con người dễ bỏ sót sự cố; AI có thể tự động phát hiện khói, xâm nhập trái phép hoặc hành vi bất thường theo thời gian thực.|
+|5.|Vinhomes|Pain từ người khác|Cư dân và nhà thầu thường phàn nàn về việc nghiệm thu căn hộ chậm, lỗi bị bỏ sót hoặc phải sửa chữa nhiều lần trước khi bàn giao.|
 ---
 
 # 🃏 Phase 2 — QUICK-ASSESS (Cá nhân, 30 min)
