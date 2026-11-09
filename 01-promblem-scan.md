@@ -19,12 +19,6 @@ Dùng **4 Lenses** quét qua vận hành của các công ty thành viên Vingro
 | 5 | **VinWonders** | AI-upgrade | Khách tham quan phải tự tìm kiếm thông tin về trò chơi, thời gian biểu diễn, thời gian chờ và vị trí các khu vực để xây dựng lịch trình phù hợp với sở thích và thời gian tham quan. |
 
 ---
-
-# 🃏 Phase 2 — QUICK-ASSESS: 3 Quick Problem Cards (Cá nhân)
-
-Chọn top 3 từ danh sách SCAN: **#2 (Xanh SM Sự cố sạc), #4 (Vinhomes CSKH), #6 (Xanh SM Hủy chuyến).**
-
-
 # 🃏 Phase 2 — QUICK-ASSESS: 3 Quick Problem Cards (Cá nhân)
 
 Chọn top 3 từ danh sách SCAN: **#1 (Vinpearl Check-in/Check-out), #2 (Vinpearl Dự báo nhân sự), #5 (VinWonders Cá nhân hóa lịch trình).**
