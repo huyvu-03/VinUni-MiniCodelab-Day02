@@ -1,17 +1,8 @@
-# Deliverable Example — Vin Smart Future (GSM / Xanh SM Use Case)
-
-> **Ví dụ bài nộp hoàn chỉnh từ đầu đến cuối lab, đã được định vị lại theo Rubric mới và bối cảnh vận hành của Vin Smart Future.**
-> 
-> * **Mục tiêu của file này:** Giúp học viên thấy rõ một đầu ra (output) chuẩn "Xuất Sắc" của Vin Smart Future trông thế nào, từ đó đối chiếu và thực hiện cho bài làm của nhóm mình.
-> * **Mảng kinh doanh lựa chọn:** **GSM (Xanh SM) — Vận hành xe taxi điện thông minh.**
-
----
-
 ## 🏛️ Bối cảnh: Tôi là ai?
 
-Tôi là **Nam**, AI Engineer tại **Vin Smart Future**. Nhóm chúng tôi được giao nhiệm vụ phối hợp với Khối Vận Hành của **Xanh SM (GSM)** để tìm kiếm các cơ hội tối ưu hóa bằng trí tuệ nhân tạo. 
+Tôi là **Hằng**, AI Engineer tại **Vin Smart Future**. Nhóm chúng tôi được giao nhiệm vụ phối hợp với Khối Vận Hành của **Vinpearl / VinWonders** để tìm kiếm các cơ hội tối ưu hóa bằng trí tuệ nhân tạo. 
 
-Thông qua khảo sát thực địa tại Trung tâm Điều vận Xanh SM Hà Nội, tôi nhận thấy các điều phối viên (Dispatchers) đang gặp một áp lực cực kỳ lớn vào giờ cao điểm, dẫn đến việc rò rỉ hiệu suất điều xe và tăng tỉ lệ khách hàng hủy chuyến. Bài toán tôi mang vào buổi Lab hôm nay đến từ chính quan sát thực tế này.
+Thông qua đợt khảo sát thực tế tại hệ thống quần thể nghỉ dưỡng và vui chơi giải trí Vinpearl Nha Trang / Phú Quốc, tôi nhận thấy các quản lý và nhân viên vận hành đang phải đối mặt với áp lực lớn vào mùa cao điểm: khách hàng xếp hàng dài chờ check-in, tình trạng nghẽn luồng khách tại các cổng trò chơi trọng điểm, cùng với việc xử lý hàng loạt yêu cầu thay đổi lịch trình cá nhân hóa thủ công. Các bài toán dưới đây được đúc kết trực tiếp từ thực trạng vận hành này.
 
 ---
 
@@ -21,12 +12,11 @@ Dùng **4 Lenses** quét qua vận hành của các công ty thành viên Vingro
 
 | # | Subsidiary | Lens | Mô tả ngắn bài toán |
 |---|------------|------|---------------------|
-| 1 | **Xanh SM** | Lặp lại | So khớp và phân bổ lại cuốc xe khi khách hàng yêu cầu thay đổi điểm đến giữa chừng. |
-| 2 | **Xanh SM** | Tốn thời gian | Điều phối viên xử lý thủ công các phản hồi khẩn cấp từ tài xế về sự cố sạc pin hoặc va chạm thực địa (mất 15-20 min/lượt). |
-| 3 | **VinFast** | Lặp lại | So khớp hóa đơn sạc điện và đối chiếu số liệu trạm sạc đối tác hằng tuần. |
-| 4 | **Vinhomes** | AI-upgrade | Hệ thống phân loại và route tự động các phản hồi/khiếu nại của cư dân trên App Vinhomes Resident (CSKH phản hồi rập khuôn, mất 12 tiếng). |
-| 5 | **Vinmec** | Pain từ người khác | Bác sĩ mất quá nhiều thời gian viết tóm tắt hồ sơ xuất viện (mất 20-30 phút/bệnh nhân, bác sĩ phàn nàn vì quá tải). |
-| 6 | **Xanh SM** | Tốn thời gian | Tóm tắt lý do khách hàng hủy chuyến từ cuộc gọi ghi âm và ghi chú của tài xế để tìm pattern lỗi hệ thống. |
+| 1 | **Vinpearl** | Lặp lại | Nhân viên lễ tân phải kiểm tra thông tin đặt phòng, xác minh giấy tờ tùy thân, đối chiếu thanh toán và cập nhật trạng thái phòng thủ công trong quy trình check-in/check-out, gây mất thời gian vào mùa cao điểm. |
+| 2 | **Vinpearl** | Tốn thời gian | Quản lý phải tổng hợp dữ liệu đặt phòng, tỷ lệ lấp đầy và lịch sử sử dụng dịch vụ để dự báo nhu cầu, lập kế hoạch và phân bổ nhân sự cho các bộ phận như lễ tân, buồng phòng và nhà hàng. |
+| 3 | **Vinpearl** | Pain từ người khác | Khách hàng phải chờ nhận phòng do việc cập nhật trạng thái dọn dẹp, kiểm tra và bàn giao phòng giữa bộ phận lễ tân và buồng phòng chưa đồng bộ kịp thời. |
+| 4 | **VinWonders** | Lặp lại | Nhân viên tại cổng phải liên tục quét mã vé, xác minh loại vé, kiểm tra quyền sử dụng và xử lý các trường hợp vé lỗi hoặc không hợp lệ, đặc biệt khi lượng khách tăng cao. |
+| 5 | **VinWonders** | AI-upgrade | Khách tham quan phải tự tìm kiếm thông tin về trò chơi, thời gian biểu diễn, thời gian chờ và vị trí các khu vực để xây dựng lịch trình phù hợp với sở thích và thời gian tham quan. |
 
 ---
 
