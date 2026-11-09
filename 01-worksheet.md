@@ -76,7 +76,7 @@ Chọn **top 3 bài toán** từ danh sách trên và hoàn thiện **3 Quick Pr
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
-│ QUICK PROBLEM CARD #01                                     │
+│ QUICK PROBLEM CARD #01                                      │
 │                                                             │
 │ Bài toán (1 câu): Tự động hóa quy trình tiếp nhận, phân loại, chuyển bộ phận và theo dõi xử lý yêu cầu của cư dân Vinhomes nhằm giảm thời gian xử lý, hạn chế bỏ sót yêu cầu và nâng cao chất lượng dịch vụ.  │
 │ Công ty thành viên: [ ] VinFast  [ ] Xanh SM  [x] Vinhomes  │
